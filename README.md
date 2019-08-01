@@ -44,11 +44,7 @@ To find the sentiment of each book over time, I split each writing into 40 piece
 ## Topic Modeling
 To perform topic modeling, I chose to use Latent Dirichlet Allocation. I found LDA to be a good choice of tool for this project due to the interpretability of topics. Working with large and complex pieces of data like literature works, I wanted to see if I as a reader could pick up latent/hidden topics as a result of my data analysis. 
 
-For this task, I created three LDA models - first based on all parts of speech, second including only nouns, and third using nouns and adjectives. For the last two models, I created noun-filtering and noun&adjective-filtering lambda functions, created two new document-term matrices and transformed them into a sparse matrix and finally a gensim corpus.
-
-Filtering and using only nouns for our LDA model could be an improvement simply because topics themselves (like “war” or “love”) are nouns. For example, in the sentence “The war was dreadful and unforgiving, but it could not destroy their love” extracting nouns “war” and “love” shows the sentence’s themes much clearer. At the same time, adjectives are useful for making a better term-document matrix for our LDA model. For example, in the sentence “Her face was bloody and demonic”, adjectives “bloody” and “demonic” hint at the themes much better than the noun “face”.
-
-After trying out various combinations of filters, topics, and passes, I created the final model - a noun&adjective model with 5 topics and 100 passes. The model's results include most comprehensive words (including adjectives), take words from more books, and incorporate a much wider variety of visible topics. 
+For this task, I created three LDA models - first based on all parts of speech, second including only nouns, and third using nouns and adjectives. For the last two models, I created noun-filtering and noun&adjective-filtering lambda functions, created two new document-term matrices and transformed them into a sparse matrix and finally a gensim corpus. After trying out various combinations of filters, topics, and passes, I created the final model - a noun&adjective model with 5 topics and 100 passes. The model's results include most comprehensive words (including adjectives), take words from more books, and incorporate a much wider variety of visible topics. 
 (insert picture of model)
 
 
