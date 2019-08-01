@@ -27,5 +27,8 @@ First, I looked at the writings through most common words in each book. Taking t
 (insert picture of wordclouds)
 
 
-### Vocabulary size
-I also looked at the vocabulary size of each author, calculated by the number of unique words. I also calculated the length of the book (total words), and 
+### Vocabulary Size
+To see the vocabulary size of each author, I calculated by the number of unique words, as well as found the length of the books by calculating the total number of words. To visualize my findings, I created bar graphs and scatter plots using numpy and matplotlib. 
+(insert graphs)
+
+## Sentiment Analysis
