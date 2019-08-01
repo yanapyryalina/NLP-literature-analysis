@@ -51,8 +51,28 @@ For this task, I created three LDA models - first based on all parts of speech, 
 
 
 ## Text Generation
-I chose Markov Chains as a starting point for text generation, as I wanted to start my learning process from simpler approaches, as well as to see the extent of the success of this approach when working with larger texts like works of literature. To create a Markov Chain function, I used the defaultdict library because it allows to efficiently create a dictionary chain of words from our corpus on the go (in a loop), avoiding KeyErrors. The function creates a zipped list of all of the word pairs and put them in a dictionary format (word : list of connecting words). To generate sentences, I randomly picked a word from the dictionary, and followed its connecting lists of possible words until the specified end of the sentence. Surprisingly, Markov Chains resulted in text generator that preserved the writers’ styles very visibly. Here are some of my favorite examples:
-(insert examples)
+I chose Markov Chains as a starting point for text generation, as I wanted to start my learning process from simpler approaches, as well as to see the extent of the success of this approach when working with larger texts like works of literature. 
+
+To create a Markov Chain function, I used the defaultdict library because it allows to efficiently create a dictionary chain of words from our corpus on the go (in a loop), avoiding KeyErrors. The function creates a zipped list of all of the word pairs and put them in a dictionary format (word : list of connecting words). To generate sentences, I randomly picked a word from the dictionary, and followed its connecting lists of possible words until the specified end of the sentence. 
+
+Surprisingly, Markov Chains resulted in text generator that preserved the writers’ styles very visibly. Here are some of my favorite examples:
+>Stephen King: 'Comment. Nobody was overcast and sanitary napkins, chanting, laughing, shrieking of course, forbade her heart..'
+
+> Guy Debord: 'Erasure of the century language of goods is insignificant or in this mystery is genuine.'
+
+> Stephen Hawking: 'Suggests, cosmic censorship hypothesis tells us the inner edge of one ignored the very close.'
+
+> J.R.R. Tolkien: 'Loosened his door, and giving his ring of the balance as if he had baked.'
+> Grandmother, teaching his legs with them hoping against the chill flame, beating wigs bear to.
+> Saucer, and Bilbo had lost the foot of the foot right away.
+> "Try," said a gathering together! There was not forbear to sniff.
+> What about the hobbit? He slashed the current market value"
+
+> Isaac Asimov: 'Sake, as to admit you speak, Hardin. And two; after Emperor would one of Imperial.'
+
+> Ernest Hemingway: 'Material and headed toward Segovia at the cup out and the gipsy’s voice thickening.'
+
+> Kurt Vonnegut: 'Architect. The atmosphere now, big kiss. She had been stolen from the opinion of his.'
 
 
 
