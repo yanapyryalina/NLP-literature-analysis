@@ -15,7 +15,10 @@ For this project, I look at the following eight writings:
 
 I chose these writings both out of personal interest and because of their unique subjects, settings, and writing styles. 
 
-## Data Cleaning and 
+## Data Scraping and Cleaning
+To collect my data, I went to [archive.org](https://archive.org/) and scraped the above-mentioned books in .txt format using Beautiful Soup and requests python libraries. 
+
+To create my pandas corpus, I performed two rounds of cleaning - first to delete new lines and second to delete non-author writing like copyright notes. To create my document-term matrix, I performed one more round of cleaning (tokenizing, 
 
 ## Exploratory Data Analysis
 
