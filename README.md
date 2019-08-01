@@ -14,3 +14,15 @@ For this project, I look at the following eight writings:
 - Slaughterhouse Five by Kurt Vonnegut
 
 I chose these writings both out of personal interest and because of their unique subjects, settings, and writing styles. 
+
+## Data Cleaning and 
+
+## Exploratory Data Analysis
+
+### Wordclouds
+First, I looked at the writings through most common words in each book. Taking the first 30 most common words and performing more cleaning, I created wordclouds using matplotlib and WordCloud libraries. 
+(insert picture of wordclouds)
+
+
+### Vocabulary size
+I also looked at the vocabulary size of each author, calculated by the number of unique words 
