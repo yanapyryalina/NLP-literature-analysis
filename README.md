@@ -29,23 +29,25 @@ First, I looked at the writings through most common words in each book. Taking t
 
 ### Vocabulary Size
 To see the vocabulary size of each author, I calculated by the number of unique words, as well as found the length of the books by calculating the total number of words. To visualize my findings, I created bar graphs and scatter plots using numpy and matplotlib. 
-(insert graphs)
+![alt text](https://github.com/yanapyryalina/NLP-literature-analysis/blob/master/nlp-lit-analysis-imgs/vocabulary-bar-graphs.png)
+![alt text](https://github.com/yanapyryalina/NLP-literature-analysis/blob/master/nlp-lit-analysis-imgs/vocabulary-scatter-plot.png)
 
 ## Sentiment Analysis
 Due to the complexity of dynamics in literature writings, I chose to approach sentiment analysis from two perspectives - overall book-vs-book sentiment comparison and sentiment over time. 
 
 I started my analysis by calculating sentiment based on the two classical scales - polarity and subjectivity. After finding the sentiment values using TextBlob, I plotted my findings to compare the writings with matplotlib.
-(insert scatter plot)
+![alt text](https://github.com/yanapyryalina/NLP-literature-analysis/blob/master/nlp-lit-analysis-imgs/sentiment-analysis-scatter-plot.png)
 
 To find the sentiment of each book over time, I split each writing into 40 pieces using numpy and graphed the data for each book separately. 40 pieces per writing ended up giving the best amount of detail, maintaining both thoroughness and readability. 
-(insert graphs with over time)
+![alt text](https://github.com/yanapyryalina/NLP-literature-analysis/blob/master/nlp-lit-analysis-imgs/sentiment-analysis-over-time.png)
 
 
 ## Topic Modeling
 To perform topic modeling, I chose to use Latent Dirichlet Allocation. I found LDA to be a good choice of tool for this project due to the interpretability of topics. Working with large and complex pieces of data like literature works, I wanted to see if I as a reader could pick up latent/hidden topics as a result of my data analysis. 
 
 For this task, I created three LDA models - first based on all parts of speech, second including only nouns, and third using nouns and adjectives. For the last two models, I created noun-filtering and noun&adjective-filtering lambda functions, created two new document-term matrices and transformed them into a sparse matrix and finally a gensim corpus. After trying out various combinations of filters, topics, and passes, I created the final model - a noun&adjective model with 5 topics and 100 passes. The model's results include most comprehensive words (including adjectives), take words from more books, and incorporate a much wider variety of visible topics. 
-(insert picture of model)
+![alt text](https://github.com/yanapyryalina/NLP-literature-analysis/blob/master/nlp-lit-analysis-imgs/final-model-1.png)
+![alt text](https://github.com/yanapyryalina/NLP-literature-analysis/blob/master/nlp-lit-analysis-imgs/final-model-2.png)
 
 
 ## Text Generation
