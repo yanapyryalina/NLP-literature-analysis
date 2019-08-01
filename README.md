@@ -32,3 +32,6 @@ To see the vocabulary size of each author, I calculated by the number of unique 
 (insert graphs)
 
 ## Sentiment Analysis
+Due to the complexity of dynamics in literature writings, I chose to approach sentiment analysis from two perspectives - overall book-vs-book sentiment comparison and sentiment over time. 
+
+I started my analysis by calculating sentiment based on the two classical scales - polarity and subjectivity. I plotted my findings to compare the writings
