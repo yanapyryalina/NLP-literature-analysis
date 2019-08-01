@@ -40,3 +40,21 @@ I started my analysis by calculating sentiment based on the two classical scales
 To find the sentiment of each book over time, I split each writing into 40 pieces using numpy and graphed the data for each book separately. 40 pieces per writing ended up giving the best amount of detail, maintaining both thoroughness and readability. 
 (insert graphs with over time)
 
+
+## Topic Modeling
+To perform topic modeling, I chose to use Latent Dirichlet Allocation. I found LDA to be a good choice of tool for this project due to the interpretability of topics. Working with large and complex pieces of data like literature works, I wanted to see if I as a reader could pick up latent/hidden topics as a result of my data analysis. 
+
+For this task, I created three LDA models - first based on all parts of speech, second including only nouns, and third using nouns and adjectives. For the last two models, I created noun-filtering and noun&adjective-filtering lambda functions, created two new document-term matrices and transformed them into a sparse matrix and finally a gensim corpus.
+
+Filtering and using only nouns for our LDA model could be an improvement simply because topics themselves (like “war” or “love”) are nouns. For example, in the sentence “The war was dreadful and unforgiving, but it could not destroy their love” extracting nouns “war” and “love” shows the sentence’s themes much clearer. At the same time, adjectives are useful for making a better term-document matrix for our LDA model. For example, in the sentence “Her face was bloody and demonic”, adjectives “bloody” and “demonic” hint at the themes much better than the noun “face”.
+
+After trying out various combinations of filters, topics, and passes, I created the final model - a noun&adjective model with 5 topics and 100 passes. The model's results include most comprehensive words (including adjectives), take words from more books, and incorporate a much wider variety of visible topics. 
+(insert picture of model)
+
+
+## Text Generation
+I chose Markov Chains as a starting point for text generation, as I wanted to start my learning process from simpler approaches, as well as to see the extent of the success of this approach when working with larger texts like works of literature. To create a Markov Chain function, I used the defaultdict library because it allows to efficiently create a dictionary chain of words from our corpus on the go (in a loop), avoiding KeyErrors. The function creates a zipped list of all of the word pairs and put them in a dictionary format (word : list of connecting words). To generate sentences, I randomly picked a word from the dictionary, and followed its connecting lists of possible words until the specified end of the sentence. Surprisingly, Markov Chains resulted in text generator that preserved the writers’ styles very visibly. Here are some of my favorite examples:
+(insert examples)
+
+
+
