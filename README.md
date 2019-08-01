@@ -24,7 +24,7 @@ In order to create my corpus and .To create my pandas corpus, I performed two ro
 
 ### Wordclouds
 First, I looked at the writings through most common words in each book. Taking the first 30 most common words and performing more cleaning, I created wordclouds using matplotlib and WordCloud libraries. 
-![alt text](https://github.com/yanapyryalina/NLP-literature-analysis/blob/master/nlp-lit-analysis-imgs/word-clouds-1.png)
+![alt text](https://github.com/yanapyryalina/NLP-literature-analysis/blob/master/nlp-lit-analysis-imgs/word-clouds-3.png)
 
 
 ### Vocabulary Size
