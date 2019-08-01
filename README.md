@@ -34,4 +34,9 @@ To see the vocabulary size of each author, I calculated by the number of unique 
 ## Sentiment Analysis
 Due to the complexity of dynamics in literature writings, I chose to approach sentiment analysis from two perspectives - overall book-vs-book sentiment comparison and sentiment over time. 
 
-I started my analysis by calculating sentiment based on the two classical scales - polarity and subjectivity. I plotted my findings to compare the writings
+I started my analysis by calculating sentiment based on the two classical scales - polarity and subjectivity. After finding the sentiment values using TextBlob, I plotted my findings to compare the writings with matplotlib.
+(insert scatter plot)
+
+To find the sentiment of each book over time, I split each writing into 40 pieces using numpy and graphed the data for each book separately. 40 pieces per writing ended up giving the best amount of detail, maintaining both thoroughness and readability. 
+(insert graphs with over time)
+
