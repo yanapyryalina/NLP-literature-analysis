@@ -18,7 +18,7 @@ I chose these writings both out of personal interest and because of their unique
 ## Data Scraping and Cleaning
 To collect my data, I went to [archive.org](https://archive.org/) and scraped the above-mentioned books in .txt format using Beautiful Soup and requests python libraries. 
 
-To create my pandas corpus, I performed two rounds of cleaning - first to delete new lines and second to delete non-author writing like copyright notes. To create my document-term matrix, I performed one more round of cleaning (tokenizing, 
+In order to create my corpus and .To create my pandas corpus, I performed two rounds of cleaning - first to delete new lines and second to delete non-author writing like copyright notes. I then performed the third round of cleaning (lowercase, removing punctuation and digits), and created a document-term matrix using CountVectorizer. I also pickled more versions of these data frames to load throughout the different sections of my project.
 
 ## Exploratory Data Analysis
 
@@ -28,4 +28,4 @@ First, I looked at the writings through most common words in each book. Taking t
 
 
 ### Vocabulary size
-I also looked at the vocabulary size of each author, calculated by the number of unique words 
+I also looked at the vocabulary size of each author, calculated by the number of unique words. I also calculated the length of the book (total words), and 
