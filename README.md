@@ -97,5 +97,12 @@ Surprisingly, Markov Chains resulted in text generator that preserved the writer
 - Kurt Vonnegut: 'Architect. The atmosphere now, big kiss. She had been stolen from the opinion of his.'
 
 
+## Final Thoughts & Results
+Each of the sections of this project revealed findings that were surprising and exciting both for people who have read the books and for those who have not. For example, who knew that Stephen King and Isaac Asimov - writers in completely different styles and genres - have the largest vocabulary out of all these authors? Or that Tolkien's *The Hobbit* is the most sentimental of these books? 
 
+For more findings, check out the Results section of my report in this folder or through this link [here](https://docs.google.com/document/d/1XUBmfaKCUlWnRs6jaWdrXDH8M8Yh0mFkZulmeRgOAFU/edit?usp=sharing).
+
+### Credits
+Thank you so much to Alice Zhao who made such an amazing PyOhio 2018 conference workshop that inspired this project. 
+Check out her workshop [here](https://www.youtube.com/watch?v=xvqsFTUsOmc)
 
