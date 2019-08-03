@@ -102,6 +102,8 @@ Each of the sections of this project revealed findings that were surprising and 
 
 For more findings, check out the Results section of my report in this folder or through this link [here](https://docs.google.com/document/d/1XUBmfaKCUlWnRs6jaWdrXDH8M8Yh0mFkZulmeRgOAFU/edit?usp=sharing).
 
+I believe that there is great value in looking at works of literature from a data science perspective, as it allows to analyze the humanity's most valued views of the world from a new fresh angle that the 21st century is bringing to us. I look forward to expanding this project to analyze works of literature accross more time periods and languages including Russian and French. 
+
 ### Credits
 Thank you so much to Alice Zhao who made such an amazing PyOhio 2018 conference workshop that inspired this project. 
 Check out her workshop [here](https://www.youtube.com/watch?v=xvqsFTUsOmc)
